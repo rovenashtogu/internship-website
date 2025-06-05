@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shero Commerce</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>  <!-- HERO SECTION -->
+  <section class="section section--orange hero">
+    <div class="hero-content-wrapper">
+      <div class="hero-image">
+        <img src="https://placeholderimage.dev/2522x1477/FFC089/000000?text=Thread+Still+Life" alt="Colorful embroidery threads and fruits">
+      </div>
+    <div class="hero-content">        
+      <h1 class="text text--large text--right text--white">Add color to your
+          <br> masterpiece</h1>
+        <a href="#" class="btn btn--outline btn--white">Shop Now</a>
+      </div>
+    </div>
+  </section>
+  <!-- PRODUCT CARDS SECTION -->
+  <section class="section">
+    <div class="container grid">      <article class="product-card">
+        <img src="https://placeholderimage.dev/360x360/FEE5D3/000000?text=GLIDE" alt="Glide thread with fruits" class="product-image product-image--large">
+        <h3 class="text text--small text--uppercase">GLIDE</h3>
+      </article>
+      <article class="product-card">
+        <img src="https://placeholderimage.dev/360x360/FCE8F0/000000?text=MAGNETIC+CORE+BOBBIN" alt="Magnetic core bobbin with flowers" class="product-image product-image--large">
+        <h3 class="text text--small text--uppercase">MAGNETIC CORE BOBBIN</h3>
+      </article>
+      <article class="product-card">
+        <img src="https://placeholderimage.dev/360x360/F5F5F5/000000?text=PREMIUM+STABILIZER" alt="Premium stabilizer boxes" class="product-image product-image--large">
+        <h3 class="text text--small text--uppercase">PREMIUM STABILIZER</h3>
+      </article>
+    </div>
+  </section>
+  <!-- FEATURED PRODUCTS -->
+  <section class="section">
+    <div class="container container--wide">
+      <h2 class="text text--medium text--uppercase text--center">FEATURED PRODUCTS</h2>
+      <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+          <div class="glide__slides">
+            <div class="glide__slide">              <figure class="product-card">
+                <img src="https://placeholderimage.dev/280x280/EDF2F6/000000?text=Embroidery+Stabilizer" alt="Embroidery stabilizer" class="product-image product-image--medium">
+                <figcaption class="text text--small text--uppercase">EMBROIDERY STABILIZER</figcaption>
+              </figure>
+            </div>
+            <div class="glide__slide">
+              <figure class="product-card">
+                <img src="https://placeholderimage.dev/280x280/F2F3F6/000000?text=Elephant+Plush" alt="Cubbie grey elephant" class="product-image product-image--medium">
+                <figcaption class="text-base text-uppercase product-title">CUBBIE GREY ELEPHANT</figcaption>
+              </figure>
+            </div>
+            <div class="glide__slide">
+              <figure class="product-card">
+                <img src="https://placeholderimage.dev/280x280/F1F2F6/000000?text=Cup+of+Cheer" alt="Kimberbell cup of cheer" class="product-image product-image--medium">
+                <figcaption class="text-base text-uppercase product-title">KIMBERBELL CUP OF CHEER</figcaption>
+              </figure>
+            </div>
+            <div class="glide__slide">
+              <figure class="product-card">
+                <img src="https://placeholderimage.dev/280x280/FAF7F1/000000?text=Two+Scoops" alt="Kimberbell two scoops" class="product-image product-image--medium">
+                <figcaption class="text-base text-uppercase product-title">KIMBERBELL TWO SCOOPS</figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">←</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">→</button>
+        </div>
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>
+          <button class="glide__bullet" data-glide-dir="=2"></button>
+          <button class="glide__bullet" data-glide-dir="=3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script>
+  new Glide('.glide', {
+    type: 'carousel',
+    perView: 4,
+    gap: 40,
+    autoplay: false,
+    hoverpause: true,
+    animationDuration: 1000,
+    dragThreshold: 120,
+    breakpoints: {
+      1024: { perView: 3, gap: 30 },
+      768:  { perView: 2, gap: 20 },
+      500:  { perView: 1, gap: 10 }
+    }
+  }).mount();
+</script>
+
+</body>
+</html>
